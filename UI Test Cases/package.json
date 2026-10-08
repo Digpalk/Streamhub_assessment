@@ -1,0 +1,24 @@
+{
+  "name": "ui-test-cases",
+  "version": "1.0.0",
+  "description": "Playwright + Cucumber (BDD) UI tests for the emicalculator.net Home Loan EMI calculator and payment break-up pie chart.",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:headed": "cross-env HEADED=1 cucumber-js",
+    "report": "start reports/cucumber-report.html"
+  },
+  "keywords": [
+    "playwright",
+    "cucumber",
+    "bdd",
+    "emi",
+    "ui-testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "cross-env": "^7.0.3",
+    "playwright": "^1.49.0"
+  }
+}

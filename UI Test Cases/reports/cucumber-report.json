@@ -1,0 +1,364 @@
+[
+  {
+    "description": "  As a user of the EMI Calculator\n  I want the yearly EMI payment bar chart to reflect my personal loan schedule\n  So that I can see how principal and interest are paid off each year",
+    "elements": [
+      {
+        "description": "",
+        "id": "personal-loan-emi-payment-schedule-bar-chart;validate-the-emi-payment-bar-chart-for-a-personal-loan",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Validate the EMI payment bar chart for a personal loan",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4316945599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I launch the EMI Calculator application",
+            "match": {
+              "location": "features\\step_definitions\\emi.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3575069000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I navigate to the \"Personal Loan\" tab",
+            "match": {
+              "location": "features\\step_definitions\\emi.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1919096299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I set the loan amount slider to 1000000, the interest rate slider to 12 and the tenure slider to 5 years",
+            "match": {
+              "location": "features\\step_definitions\\bar.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3304081700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I change the schedule start month to \"Jan\" using the calendar widget",
+            "match": {
+              "location": "features\\step_definitions\\bar.steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 798102999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the EMI payment bar chart should be visible and available",
+            "match": {
+              "location": "features\\step_definitions\\bar.steps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107453999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the number of bars in the bar chart should match the number of years in the schedule",
+            "match": {
+              "location": "features\\step_definitions\\bar.steps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10386200
+            },
+            "embeddings": [
+              {
+                "data": "QmFyczogNSAoeWVhcnM6IDIwMjYsIDIwMjcsIDIwMjgsIDIwMjksIDIwMzApOyBjb2x1bW4gc2VnbWVudHM6IDEwOyBleHBlY3RlZCB5ZWFyczogNQ==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the tooltip of a single bar should display values that match the chart data",
+            "match": {
+              "location": "features\\step_definitions\\bar.steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 538628800
+            },
+            "embeddings": [
+              {
+                "data": "VG9vbHRpcDogIlllYXIgOiAyMDI2UHJpbmNpcGFsIDog4oK5IDEsNTUsMjkwVG90YWwgUGF5bWVudCA6IOKCuSAyLDY2LDkzMyIgLT4geyJZZWFyIjoyMDI2LCJQcmluY2lwYWwiOjE1NTI5MCwiVG90YWwgUGF5bWVudCI6MjY2OTMzfQ==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41166799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "personal-loan-emi-payment-schedule-bar-chart",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Personal Loan EMI payment schedule bar chart",
+    "tags": [],
+    "uri": "features\\emi-bar-chart.feature"
+  },
+  {
+    "description": "  As a user of the EMI Calculator\n  I want the Home Loan EMI and its payment break-up pie chart to be correct\n  So that I can trust the figures shown by the application",
+    "elements": [
+      {
+        "description": "",
+        "id": "home-loan-emi-and-payment-break-up-pie-chart;validate-calculated-emi-and-pie-chart-break-up",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Validate calculated EMI and pie chart break-up",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4476421400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I launch the EMI Calculator application",
+            "match": {
+              "location": "features\\step_definitions\\emi.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3368828399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I navigate to the \"Home Loan\" tab",
+            "match": {
+              "location": "features\\step_definitions\\emi.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1635309000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I enter a loan amount of 2500000, an interest rate of 10% and a tenure of 10 years",
+            "match": {
+              "location": "features\\step_definitions\\emi.steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1928810399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the EMI shown in the application should match my calculated EMI",
+            "match": {
+              "location": "features\\step_definitions\\emi.steps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10562700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the payment break-up pie chart should be visible and available",
+            "match": {
+              "location": "features\\step_definitions\\emi.steps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109052800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "both sections of the pie chart should show a value greater than zero",
+            "match": {
+              "location": "features\\step_definitions\\emi.steps.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6251400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41258299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "home-loan-emi-and-payment-break-up-pie-chart;validate-calculated-emi-and-pie-chart-break-up",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Validate calculated EMI and pie chart break-up",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5007705700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I launch the EMI Calculator application",
+            "match": {
+              "location": "features\\step_definitions\\emi.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3987720900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I navigate to the \"Home Loan\" tab",
+            "match": {
+              "location": "features\\step_definitions\\emi.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1636932399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I enter a loan amount of 5000000, an interest rate of 7.5% and a tenure of 15 years",
+            "match": {
+              "location": "features\\step_definitions\\emi.steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1941035799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the EMI shown in the application should match my calculated EMI",
+            "match": {
+              "location": "features\\step_definitions\\emi.steps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10493099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the payment break-up pie chart should be visible and available",
+            "match": {
+              "location": "features\\step_definitions\\emi.steps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 103417000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "both sections of the pie chart should show a value greater than zero",
+            "match": {
+              "location": "features\\step_definitions\\emi.steps.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4737200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30615799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "home-loan-emi-and-payment-break-up-pie-chart",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Home Loan EMI and payment break-up pie chart",
+    "tags": [],
+    "uri": "features\\emi-pie-chart.feature"
+  }
+]
